@@ -67,8 +67,6 @@ public class ReportResource {
 	@Path("{rId}")
 	public Report getReport(@PathParam("rId")final String rId) {
 		
-		System.out.println(rId);
-		
 		return dao.getReport(rId);
 		
 	}
@@ -77,8 +75,6 @@ public class ReportResource {
 	@PUT
 	@Path("{rId}")
 	public void updateReport(@PathParam("rId") final String rId, Report report) {
-		
-		System.out.println("PUT p� " + rId);
 			
 		dao.updateReport(rId, report);
 		
